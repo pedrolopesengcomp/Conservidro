@@ -35,16 +35,16 @@ function NavBar(){
         <header>
             <nav className="navBar show">
                 <ul className="navBarItens">
-                    <Link to="/"><img src={Logo}></img></Link>
+                    <Link to="/Conservidro/"><img src={Logo}></img></Link>
                     <div className="navBarContentLinks">
                         <li className="links ZingRust">
-                            <Link to="/sobre-nos">Saiba mais</Link>
+                            <Link to="/Conservidro/sobre-nos">Saiba mais</Link>
                         </li>
                         <li className="links">
-                            <Link to="/servicos">Serviços</Link>
+                            <Link to="/Conservidro//servicos">Serviços</Link>
                         </li>
                         <li className="links">
-                            <Link to="/contato">Contato</Link>
+                            <Link to="/Conservidro/contato">Contato</Link>
                         </li>
                     </div>
                 </ul>
