@@ -1,0 +1,50 @@
+.pageFooter{
+    height:250px;
+    width: 100vw;
+    background-color:#141414;
+    margin:auto;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pageFooterTitle{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    color:white;
+    letter-spacing: 2px;
+}
+
+.pageFooterSpace{
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pageFooterContent{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+h4{
+    font-family: Zing-Rust;
+    font-size: 1em;
+    color:white;
+    letter-spacing: 2px;
+}
+
+.FooterLink{
+    color:white;
+}
+
+.FooterLi{
+    list-style: none;
+    
+}

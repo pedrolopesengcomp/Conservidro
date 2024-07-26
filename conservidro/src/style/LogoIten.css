@@ -1,0 +1,25 @@
+.LogoIten{
+    display: flex;
+    justify-items:center;
+    flex-direction: column;
+    align-items:center;
+
+    margin: 0px 40px;
+}
+
+.logoImageBackground{
+    background-color:#141414;
+    border-radius:300px;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoImage{
+    background-color:#141414;
+}
+
+.logoText{
+    font-family: "Open Sans", sans-serif;
+}

@@ -1,0 +1,34 @@
+.contentArticle{
+    display:flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100vw;
+    height:100%;
+}
+
+.contentTitle{
+    font-family:"Open Sans", sans-serif;
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+
+.contentContent{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contentText{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.contentImage{
+    width: 50%;
+    height: 100%;
+}
