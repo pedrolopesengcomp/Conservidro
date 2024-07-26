@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/conservidro/static/css/main.4afd246f.css",
-    "main.js": "/conservidro/static/js/main.5339ec29.js",
-    "static/js/453.17cd031b.chunk.js": "/conservidro/static/js/453.17cd031b.chunk.js",
-    "static/media/backgroundHome.png": "/conservidro/static/media/backgroundHome.40245761aefbf1fa7343.png",
-    "static/media/Logo.png": "/conservidro/static/media/Logo.3d437c521615b3e6d2a7.png",
-    "index.html": "/conservidro/index.html",
-    "main.4afd246f.css.map": "/conservidro/static/css/main.4afd246f.css.map",
-    "main.5339ec29.js.map": "/conservidro/static/js/main.5339ec29.js.map",
-    "453.17cd031b.chunk.js.map": "/conservidro/static/js/453.17cd031b.chunk.js.map"
+    "main.css": "/Conservidro/static/css/main.4afd246f.css",
+    "main.js": "/Conservidro/static/js/main.20601a62.js",
+    "static/js/453.17cd031b.chunk.js": "/Conservidro/static/js/453.17cd031b.chunk.js",
+    "static/media/backgroundHome.png": "/Conservidro/static/media/backgroundHome.40245761aefbf1fa7343.png",
+    "static/media/Logo.png": "/Conservidro/static/media/Logo.3d437c521615b3e6d2a7.png",
+    "index.html": "/Conservidro/index.html",
+    "main.4afd246f.css.map": "/Conservidro/static/css/main.4afd246f.css.map",
+    "main.20601a62.js.map": "/Conservidro/static/js/main.20601a62.js.map",
+    "453.17cd031b.chunk.js.map": "/Conservidro/static/js/453.17cd031b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4afd246f.css",
-    "static/js/main.5339ec29.js"
+    "static/js/main.20601a62.js"
   ]
 }
