@@ -7,7 +7,7 @@ function Footer({SrcLogo}){
     return(
         <footer className="pageFooter">
             <header className="pageFooterTitleSpace">
-                <h3 className="pageFooterTitle">Cefast Baja</h3>
+                <h3 className="pageFooterTitle">Conservidro</h3>
             </header>
             <div className="pageFooterSpace">
                 <img src={SrcLogo}></img>
@@ -18,7 +18,7 @@ function Footer({SrcLogo}){
                             <Link to="/sobre-nos" className="FooterLink">Sobre nós</Link>
                         </li>
                         <li className="FooterLi">
-                            <Link to="/competicao" className="FooterLink">Competição</Link>
+                            <Link to="/competicao" className="FooterLink">Serviços</Link>
                         </li>
                     </ul>
                     <h4>

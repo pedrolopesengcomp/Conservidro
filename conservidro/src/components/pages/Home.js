@@ -12,8 +12,18 @@ function Home(){
     return(
         <>
             <Principal title="Referência e qualidade" subtitle="Somos conhecidos por cordialidade" background={Background}></Principal>
-            <List backgroundColor={"#6EACDA"} src={[{src:"", txt:"lmcasl"}, {src:"", txt:"Pedro"}, {src:"", txt:"Pedro"}, {src:"", txt:"Pedro"}, {src:"", txt:"Pedro"}]} size={100}></List>
-            <Content title="blablabla" text="lorem bla blabblalblavladlfkjsdfksadcmsdclsdlfksda" ImageSrc={Background} ></Content>
+            <List backgroundColor={"#468a89"} 
+            src={[
+                {src:"", txt:"Vantagem 1"}, 
+                {src:"", txt:"Vantagem 2"}, 
+                {src:"", txt:"Vantagem 3"}, 
+                {src:"", txt:"Vantagem 4"}, 
+                {src:"", txt:"Vantagem 5"}
+                ]} 
+                size={100}></List>
+            <Content Background="#52a2a1" id={1}
+                     title="Primeiro conteudo"
+                     text="Promocao sobre como e bacana"></Content>
             <Content title="Segundo" text="ieaieaieieaie" Background="#6EACDA"/>
             <Footer></Footer>
         </>

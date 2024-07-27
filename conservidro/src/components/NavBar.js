@@ -35,7 +35,7 @@ function NavBar(){
         <header>
             <nav className="navBar show">
                 <ul className="navBarItens">
-                    <Link to="/Conservidro/"><img src={Logo}></img></Link>
+                    <Link to="/Conservidro/"><img className="px-100" src={Logo}></img></Link>
                     <div className="navBarContentLinks">
                         <li className="links ZingRust">
                             <Link to="/Conservidro/sobre-nos">Saiba mais</Link>

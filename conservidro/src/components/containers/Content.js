@@ -2,17 +2,8 @@ import styled from 'styled-components';
 
 import Style from '../../style/Content.css';
 
-function Content({title, text, ImageSrc, Background, id}){
+function Content({title, text, ImageSrc, Background, id, direction}){
     const Section = styled.section`
-        width:100vw;
-        min-height: 200px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        margin-top:50px;
-
         ${verifyBackground()}
     `
 
@@ -27,7 +18,7 @@ function Content({title, text, ImageSrc, Background, id}){
     }
 
     return(
-        <Section>
+        <Section className="containerSection">
             <article className="contentArticle">
                 <header>
                     <h3 className="contentTitle">{title}</h3>
