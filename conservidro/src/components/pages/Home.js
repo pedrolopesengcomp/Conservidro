@@ -9,7 +9,7 @@ import { BsCashStack } from "react-icons/bs";
 
 function Home(){
     return(
-        <div>
+        <div className="relative top-24">
             <Principal title="Referência e qualidade" subtitle="Somos conhecidos por cordialidade" background={Background}></Principal>
             <List backgroundColor={"#468a89"} 
             src={[

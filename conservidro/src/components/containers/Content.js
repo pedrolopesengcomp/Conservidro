@@ -16,18 +16,18 @@ function Content({title, text, ImageSrc, Background, id, direction}){
     }
 
     return(
-        <Section className="containerSection">
-            <article className="contentArticle">
-                <header>
-                    <h3 className="contentTitle">{title}</h3>
+        <Section className="w-full h-96 flex justify-center items-center flex-col">
+            <article className="w-full h-full flex flex-col items-center">
+                <header className="h-36 flex-none flex items-center justify-center">
+                    <h3 className="text-4xl text-bold">{title}</h3>
                 </header>
-                <div className="contentContent">
-                    <p className="contentText">
+                <div className="grow flex w-full items-center">
+                    <p className="min-w-2/3 grow text-center">
                         {text}
                     </p>
 
                     {ImageSrc && 
-                        <img src={ImageSrc} className="contentImage"></img>
+                        <img src={ImageSrc} className="w-1/3 flex-none"></img>
                     }
 
                 </div>

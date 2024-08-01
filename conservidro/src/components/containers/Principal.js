@@ -21,7 +21,7 @@ function Principal({title, subtitle, text, background}){
 
     return(
         
-        <Section className="w-full h-96 relative top-24 flex" id="principalContainer">
+        <Section className="w-full h-96 flex" id="principalContainer">
             <div className="w-9/12 m-auto flex items-start justify-center flex-col">
                 <h1 className="text-6xl bold text-white tracking-wider">
                     {title}

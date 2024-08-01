@@ -1,19 +1,19 @@
 
 import styled from 'styled-components';
 
-function LogoIten({src,text, imageSize, id}){
+function LogoIten({src,text, imageSize, id, qtd }){
 
     function priorityLevel(){
         if(id%2==0){
             return 0;
         }
         else{
-            return 100;
+            return 50;
         }
     }
 
     const Iten = styled.div`
-        margin-top:${priorityLevel}px;
+        padding-top:${priorityLevel}px;
     `;
 
     const Image = styled.image`
@@ -28,9 +28,9 @@ function LogoIten({src,text, imageSize, id}){
 
     return(
         <>
-        <Iten className="size-24">
-            <ImageBackground className="size-24">
-                <Image src={src} className="rounded-full"></Image>
+        <Iten className={`h-full w-1/${qtd} grow flex flex-col items-center justify-center`}>
+            <ImageBackground className="size-24 bg-black rounded-full">
+                <Image src={src} className=""></Image>
             </ImageBackground>
             <h3 className="text-bold">{text}</h3>
         </Iten>
