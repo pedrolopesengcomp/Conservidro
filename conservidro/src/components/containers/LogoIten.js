@@ -1,4 +1,4 @@
-import Style from '../../style/LogoIten.css';
+
 import styled from 'styled-components';
 
 function LogoIten({src,text, imageSize, id}){
@@ -28,11 +28,11 @@ function LogoIten({src,text, imageSize, id}){
 
     return(
         <>
-        <Iten className="LogoIten">
-            <ImageBackground className="logoImageBackground">
-                <Image src={src} className="logoImage"></Image>
+        <Iten className="size-24">
+            <ImageBackground className="size-24">
+                <Image src={src} className="rounded-full"></Image>
             </ImageBackground>
-            <h3 className="logoText">{text}</h3>
+            <h3 className="text-bold">{text}</h3>
         </Iten>
         </>
     )

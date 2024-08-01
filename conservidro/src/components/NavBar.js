@@ -1,50 +1,31 @@
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
-import Style from "../style/navBarStyle.css";
 import Logo from "../images/Logo.png";
 import styled from "styled-components";
 
+import {useState} from 'react';
+
 function NavBar(){
-    var $navbar = document.getElementsByClassName("navBar");
     var initialPosition = window.scrollY;
-   
 
-    window.addEventListener("scroll", ()=>{
-        var opacity;
-        if(window.scrollY/100 < 1){
-            opacity = window.scrollY/100;
-        }
-        else{
-            opacity = 1;
-        }
-        $navbar[0].style.backgroundColor = `rgba(16,16,16,${opacity})`;
-
-        if(window.scrollY > 320){
-            if(initialPosition > window.scrollY){
-                $navbar[0].classList.add('show');
-            }
-            else{
-                $navbar[0].classList.remove('show');
-            }
-
-            initialPosition = window.scrollY;
-        }
-  })
 
     return(
-        <header>
-            <nav className="navBar show">
-                <ul className="navBarItens">
-                    <Link to="/Conservidro/"><img className="px-100" src={Logo}></img></Link>
-                    <div className="navBarContentLinks">
-                        <li className="links ZingRust">
-                            <Link to="/Conservidro/sobre-nos">Saiba mais</Link>
+        <header className='w-screen h-24 fixed bg-black z-40'>
+            <nav className="flex h-full w-full justify-center items-center">
+                <ul className="flex h-full w-11/12">
+                    <div className='h-full w-1/3'>
+                        <Link to="/Conservidro/"><img className="flex-none h-full" src={Logo}></img></Link>
+                    </div>
+                    <div className="flex-grow flex justify-end items-center
+                    w-2/3 flex-row">
+                        <li className="text-white mx-4 text-center">
+                            <Link to="/Conservidro/sobre-nos" className="px-4 py-4 hover:text-black hover:bg-blue-400 rounded-lg transition-all">Saiba mais</Link>
                         </li>
-                        <li className="links">
-                            <Link to="/Conservidro//servicos">Serviços</Link>
+                        <li className="text-white mx-4 text-center">
+                            <Link to="/Conservidro/servicos" className="px-4 py-4 hover:text-black hover:bg-blue-400 rounded-lg transition-all">Serviços</Link>
                         </li>
-                        <li className="links">
-                            <Link to="/Conservidro/contato">Contato</Link>
+                        <li className="text-white mx-4 text-center">
+                            <Link to="/Conservidro/contato" className="px-4 py-4 hover:text-black hover:bg-blue-400 rounded-lg transition-all">Contato</Link>
                         </li>
                     </div>
                 </ul>

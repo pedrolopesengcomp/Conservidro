@@ -3,14 +3,13 @@ import List from "../containers/List"
 import Content from "../containers/Content";
 import Footer from "../containers/Footer";
 
-import Style from "../../style/pageStyle.css";
 import Background from "../../images/backgroundHome.png"
 
 import { BsCashStack } from "react-icons/bs";
 
 function Home(){
     return(
-        <>
+        <div>
             <Principal title="Referência e qualidade" subtitle="Somos conhecidos por cordialidade" background={Background}></Principal>
             <List backgroundColor={"#468a89"} 
             src={[
@@ -26,7 +25,7 @@ function Home(){
                      text="Promocao sobre como e bacana"></Content>
             <Content title="Segundo" text="ieaieaieieaie" Background="#6EACDA"/>
             <Footer></Footer>
-        </>
+        </div>
     )
 }
 

@@ -1,6 +1,5 @@
 import {Link} from 'react-router-dom'
 
-import Style from '../../style/Footer.css';
 
 function Footer({SrcLogo}){
 

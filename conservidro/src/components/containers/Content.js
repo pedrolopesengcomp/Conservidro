@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import Style from '../../style/Content.css';
-
 function Content({title, text, ImageSrc, Background, id, direction}){
     const Section = styled.section`
         ${verifyBackground()}
