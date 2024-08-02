@@ -4,8 +4,13 @@ import styled from 'styled-components';
 function LogoIten({src,text, imageSize, id, qtd }){
 
     function priorityLevel(){
-        if(id%2==0){
-            return 0;
+        if(window.innerWidth > 1013){
+            if(id%2==0){
+                return 0;
+            }
+            else{
+                return 50;
+            }
         }
         else{
             return 50;
@@ -13,7 +18,10 @@ function LogoIten({src,text, imageSize, id, qtd }){
     }
 
     const Iten = styled.div`
+        
         padding-top:${priorityLevel}px;
+        padding-bottom:50px;
+        
     `;
 
     const Image = styled.image`

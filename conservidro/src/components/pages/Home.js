@@ -3,7 +3,8 @@ import List from "../containers/List"
 import Content from "../containers/Content";
 import Footer from "../containers/Footer";
 
-import Background from "../../images/backgroundHome.png"
+import Background from "../../images/backgroundHome.png";
+import Logo from "../../images/Logo.png";
 
 import { BsCashStack } from "react-icons/bs";
 
@@ -22,8 +23,13 @@ function Home(){
                 size={100}></List>
             <Content Background="#52a2a1" id={1}
                      title="Primeiro conteudo"
-                     text="Promocao sobre como e bacana"></Content>
-            <Content title="Segundo" text="ieaieaieieaie" Background="#6EACDA"/>
+                     text="Promocao sobre como e bacana"
+                     direction="col"></Content>
+            <Content title="Segundo" 
+            text="ieaieaieieaie" 
+            Background="#6EACDA"
+            direction="col"
+            ImageSrc={Background}/>
             <Footer></Footer>
         </div>
     )
