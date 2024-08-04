@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Conservidro/static/css/main.984037a7.css",
-    "main.js": "/Conservidro/static/js/main.4c0ee1d0.js",
+    "main.css": "/Conservidro/static/css/main.4afd246f.css",
+    "main.js": "/Conservidro/static/js/main.20601a62.js",
     "static/js/453.17cd031b.chunk.js": "/Conservidro/static/js/453.17cd031b.chunk.js",
     "static/media/backgroundHome.png": "/Conservidro/static/media/backgroundHome.40245761aefbf1fa7343.png",
     "static/media/Logo.png": "/Conservidro/static/media/Logo.3d437c521615b3e6d2a7.png",
     "index.html": "/Conservidro/index.html",
-    "main.984037a7.css.map": "/Conservidro/static/css/main.984037a7.css.map",
-    "main.4c0ee1d0.js.map": "/Conservidro/static/js/main.4c0ee1d0.js.map",
+    "main.4afd246f.css.map": "/Conservidro/static/css/main.4afd246f.css.map",
+    "main.20601a62.js.map": "/Conservidro/static/js/main.20601a62.js.map",
     "453.17cd031b.chunk.js.map": "/Conservidro/static/js/453.17cd031b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.984037a7.css",
-    "static/js/main.4c0ee1d0.js"
+    "static/css/main.4afd246f.css",
+    "static/js/main.20601a62.js"
   ]
 }
