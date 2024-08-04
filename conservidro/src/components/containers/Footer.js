@@ -1,15 +1,14 @@
 import {Link} from 'react-router-dom'
 
-import Style from '../../style/Footer.css';
 
 function Footer({SrcLogo}){
 
     return(
-        <footer className="pageFooter">
-            <header className="pageFooterTitleSpace">
+        <footer className="w-full h-80 flex direction-center items-center flex-col bg-black text-white">
+            <header className="h-1/3">
                 <h3 className="pageFooterTitle">Conservidro</h3>
             </header>
-            <div className="pageFooterSpace">
+            <div className="w-11/12 h-2/3 justify-center items-center">
                 <img src={SrcLogo}></img>
                 <div className="pageFooterContent">
                     <h4>Navegue</h4>

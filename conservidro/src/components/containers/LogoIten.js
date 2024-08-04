@@ -1,19 +1,27 @@
-import Style from '../../style/LogoIten.css';
+
 import styled from 'styled-components';
 
-function LogoIten({src,text, imageSize, id}){
+function LogoIten({src,text, imageSize, id, qtd }){
 
     function priorityLevel(){
-        if(id%2==0){
-            return 0;
+        if(window.innerWidth > 1013){
+            if(id%2==0){
+                return 0;
+            }
+            else{
+                return 50;
+            }
         }
         else{
-            return 100;
+            return 50;
         }
     }
 
     const Iten = styled.div`
-        margin-top:${priorityLevel}px;
+        
+        padding-top:${priorityLevel}px;
+        padding-bottom:50px;
+        
     `;
 
     const Image = styled.image`
@@ -28,11 +36,11 @@ function LogoIten({src,text, imageSize, id}){
 
     return(
         <>
-        <Iten className="LogoIten">
-            <ImageBackground className="logoImageBackground">
-                <Image src={src} className="logoImage"></Image>
+        <Iten className={`h-full w-1/${qtd} grow flex flex-col items-center justify-center`}>
+            <ImageBackground className="size-24 bg-black rounded-full">
+                <Image src={src} className=""></Image>
             </ImageBackground>
-            <h3 className="logoText">{text}</h3>
+            <h3 className="text-bold">{text}</h3>
         </Iten>
         </>
     )

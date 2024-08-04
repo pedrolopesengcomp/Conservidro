@@ -1,8 +1,15 @@
 import styled from 'styled-components';
 
-import Style from '../../style/Content.css';
-
 function Content({title, text, ImageSrc, Background, id, direction}){
+    function defineHeight(){
+        if((ImageSrc == undefined)){
+            return 64;
+        }
+        else{
+            return 96;
+        }
+    }
+
     const Section = styled.section`
         ${verifyBackground()}
     `
@@ -18,18 +25,18 @@ function Content({title, text, ImageSrc, Background, id, direction}){
     }
 
     return(
-        <Section className="containerSection">
-            <article className="contentArticle">
-                <header>
-                    <h3 className="contentTitle">{title}</h3>
+        <Section className={`w-full h-${defineHeight()} flex justify-center items-center flex-col`}>
+            <article className={`w-9/12 h-full flex flex-${direction} items-center `}>
+                <header className="h-36 flex-none flex items-center">
+                    <h3 className="text-4xl text-bold">{title}</h3>
                 </header>
-                <div className="contentContent">
-                    <p className="contentText">
+                <div className={`flex-none flex w-full items-center flex-wrap`}>
+                    <p className="grow text-center">
                         {text}
                     </p>
 
-                    {ImageSrc && 
-                        <img src={ImageSrc} className="contentImage"></img>
+                    {ImageSrc &&
+                            <img className="shrink w-96"src={ImageSrc} ></img>
                     }
 
                 </div>
