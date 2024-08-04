@@ -1,4 +1,4 @@
-import Style from "../../style/pageStyle.css"
+
 
 function Competition(){
     return(
