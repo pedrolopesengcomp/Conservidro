@@ -30,7 +30,7 @@ function Content({title, text, ImageSrc, Background, id, direction}){
                 <header className="h-36 flex-none flex items-center">
                     <h3 className="text-4xl text-bold">{title}</h3>
                 </header>
-                <div className={`flex-none flex w-full items-center flex-wrap`}>
+                <div className={`flex-none flex w-full items-center flex-wrap p-8`}>
                     <p className="grow text-center">
                         {text}
                     </p>
