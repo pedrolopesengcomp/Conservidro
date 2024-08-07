@@ -38,7 +38,7 @@ function LogoIten({src,text, imageSize, id, qtd }){
         <>
         <Iten className={`h-full w-1/${qtd} grow flex flex-col items-center justify-center`}>
             <ImageBackground className="size-24 bg-black rounded-full">
-                <Image src={src} className=""></Image>
+                {<src></src>}
             </ImageBackground>
             <h3 className="text-bold">{text}</h3>
         </Iten>

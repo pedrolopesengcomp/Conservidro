@@ -6,6 +6,8 @@ import Footer from "../containers/Footer";
 import Background from "../../images/backgroundHome.png";
 import Logo from "../../images/Logo.png";
 
+import { BsCalendar2CheckFill } from "react-icons/bs";
+
 import { BsCashStack } from "react-icons/bs";
 
 function Home(){
@@ -14,7 +16,7 @@ function Home(){
             <Principal title="Referência e qualidade" subtitle="Somos conhecidos por cordialidade" background={Background}></Principal>
             <List backgroundColor={"#468a89"} 
             src={[
-                {src:"", txt:"Vantagem 1"}, 
+                {src:{BsCalendar2CheckFill}, txt:"Vantagem 1"}, 
                 {src:"", txt:"Vantagem 2"}, 
                 {src:"", txt:"Vantagem 3"}, 
                 {src:"", txt:"Vantagem 4"}, 
