@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Conservidro/static/css/main.bc3f8019.css",
-    "main.js": "/Conservidro/static/js/main.e53d372e.js",
+    "main.js": "/Conservidro/static/js/main.924bccdf.js",
     "static/js/453.17cd031b.chunk.js": "/Conservidro/static/js/453.17cd031b.chunk.js",
     "static/media/backgroundHome.png": "/Conservidro/static/media/backgroundHome.40245761aefbf1fa7343.png",
     "static/media/Logo.png": "/Conservidro/static/media/Logo.3d437c521615b3e6d2a7.png",
     "index.html": "/Conservidro/index.html",
     "main.bc3f8019.css.map": "/Conservidro/static/css/main.bc3f8019.css.map",
-    "main.e53d372e.js.map": "/Conservidro/static/js/main.e53d372e.js.map",
+    "main.924bccdf.js.map": "/Conservidro/static/js/main.924bccdf.js.map",
     "453.17cd031b.chunk.js.map": "/Conservidro/static/js/453.17cd031b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc3f8019.css",
-    "static/js/main.e53d372e.js"
+    "static/js/main.924bccdf.js"
   ]
 }
