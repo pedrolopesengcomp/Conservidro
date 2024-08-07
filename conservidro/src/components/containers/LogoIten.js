@@ -34,11 +34,16 @@ function LogoIten({src,text, imageSize, id, qtd }){
         height:${imageSize + 50}px;
     `;
 
+    function teste(){
+        console.log(src);
+        return src.src;
+    }
+
     return(
         <>
         <Iten className={`h-full w-1/${qtd} grow flex flex-col items-center justify-center`}>
-            <ImageBackground className="size-24 bg-black rounded-full">
-                {<src></src>}
+            <ImageBackground className="rounded-full">
+                {src}
             </ImageBackground>
             <h3 className="text-bold">{text}</h3>
         </Iten>
