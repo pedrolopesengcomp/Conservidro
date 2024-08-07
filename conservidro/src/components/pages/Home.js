@@ -25,10 +25,10 @@ function Home(){
                 size={100}></List>
             <Content Background="#52a2a1" id={1}
                      title="Primeiro conteudo"
-                     text="Promocao sobre como e bacana"
+                     text="Aqui vem os textos simples (geralmente são frases curtas e marcantes)"
                      direction="col"></Content>
             <Content title="Segundo" 
-            text="ieaieaieieaie" 
+            text="Aqui vem os textos com imagens ao lado, são geralmente ilustrações" 
             Background="#6EACDA"
             direction="col"
             ImageSrc={Background}/>
