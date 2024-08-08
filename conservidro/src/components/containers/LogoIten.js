@@ -42,7 +42,7 @@ function LogoIten({src,text, imageSize, id, qtd, bgColor, direction, reOrganize,
     return(
         <>
         <Iten className={`h-full w-1/${qtd} mx-4 grow flex flex-col items-center justify-center`}>
-            <ImageBackground className={`rounded-${rounded} flex items-center justify-center my-4`} style={{backgroundColor: bgColor}}>
+            <ImageBackground className={`${rounded} flex items-center justify-center my-4`} style={{backgroundColor: bgColor}}>
                 {src}
             </ImageBackground>
             <h3 className="font-bold tracking-wider">{text}</h3>

@@ -34,7 +34,7 @@ function Home(){
                 ]} 
                 size={100}
                 direction="row"
-                rounded="full"
+                rounded="rounded-full"
                 reOrganize={1}></List>
             <Content Background="#52a2a1" id={1}
                      title="Primeiro conteudo"

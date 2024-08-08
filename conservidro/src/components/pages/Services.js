@@ -6,23 +6,27 @@ import Footer from "../containers/Footer";
 import Background from "../../images/backgroundHome.png";
 import Logo from "../../images/Logo.png";
 
+import { FcShipped } from "react-icons/fc";
+
 function Services(){
 
+    const shipped = <FcShipped className="size-40"></FcShipped>
 
     return(
         <div className="relative top-24">
             <List
                 backgroundColor=""
                 src={[
-                    {txt:"Serviço 1", bgColor:"#52a2a1"},
-                    {txt:"Serviço 2", bgColor:"#52a2a1"},
-                    {txt:"Serviço 3", bgColor:"#52a2a1"},
-                    {txt:"Serviço 4", bgColor:"#52a2a1"},
-                    {txt:"Serviço 5", bgColor:"#52a2a1"},
-                    {txt:"Serviço 6", bgColor:"#52a2a1"},
-                    {txt:"Serviço 7", bgColor:"#52a2a1"}]}
+                    {src:shipped,txt:"Serviço 1", bgColor:"#00000"},
+                    {txt:"Serviço 2", bgColor:"#00000"},
+                    {txt:"Serviço 3", bgColor:"#00000"},
+                    {txt:"Serviço 4", bgColor:"#00000"},
+                    {txt:"Serviço 5", bgColor:"#00000"},
+                    {txt:"Serviço 6", bgColor:"#00000"},
+                    {txt:"Serviço 7", bgColor:"#00000"}]}
                     direction="row"
-                    size={300}
+                    size={200}
+                    type="card"
                     rounded="0"
                     reOrganize={0}
             ></List>

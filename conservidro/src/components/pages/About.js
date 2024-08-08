@@ -3,9 +3,14 @@ import List from "../containers/List"
 import Content from "../containers/Content";
 
 import Background from "../../images/backgroundAbout.png";
-import Logo from "../../images/Logo.png";
+import { FcCalendar } from "react-icons/fc";
+import { FcApproval } from "react-icons/fc";
 
 function About(){
+
+    const calendar = <FcCalendar className="size-24"></FcCalendar>
+    const approval = <FcApproval className="size-24"></FcApproval>
+
     return(
         <div className="relative top-24" size="5/6" >
             <Principal title="Somos uma empresa confiavel" 
@@ -16,18 +21,17 @@ function About(){
             width="full"
             backgroundColor={"#6EACDA"}
             title="Tópico sobre a empresa"
-            text="Aqui se explica como foi criada"
+            text="Aqui se explica os valores, missão, funcionamento e mais sobre a empresa"
             src={[
-                {txt:"Item sobre a empresa", bgColor:"#52a2a1"},
-                {txt:"Item sobre a empresa", bgColor:"#52a2a1"},
-                {txt:"Item sobre a empresa", bgColor:"#52a2a1"}
+                {src:calendar,txt:"Desde xx/xx/xxxx", bgColor:"#52a2a1"},
+                {src:approval,txt:"Cerficiados ISO-xxxx", bgColor:"#52a2a1"}
                 
             ]}
             reOrganize={0}
             size={150} 
             direction="col"
             ImageAux={""}
-            rounded="full"
+            rounded="rounded-full"
             ></List>
         </div>
     )

@@ -26,7 +26,7 @@ function Contact(){
             size={100} 
             direction="col"
             ImageAux={""}
-            rounded="full">
+            rounded="rounded-full">
             </List>
         </body>
     )
