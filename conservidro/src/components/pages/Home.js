@@ -1,10 +1,8 @@
 import Principal from "../containers/Principal";
 import List from "../containers/List"
 import Content from "../containers/Content";
-import Footer from "../containers/Footer";
 
 import Background from "../../images/backgroundHome.png";
-import Logo from "../../images/Logo.png";
 
 import { FcOnlineSupport} from "react-icons/fc";
 import { FcPlanner } from "react-icons/fc";
@@ -25,6 +23,7 @@ function Home(){
         <div className="relative top-24">
             <Principal title="Referência e qualidade" subtitle="Somos conhecidos por cordialidade" background={Background} size="h-96"></Principal>
             <List backgroundColor={"#468a89"}
+            width="full"
             title="Por que a conservidro"
             src={[
                 {src:support, txt:"Atendimento facilitado", bgColor:"#52a2a1"}, 
@@ -34,7 +33,9 @@ function Home(){
                 {src:device, txt:"Atendimento multi dispositivos", bgColor:"#52a2a1"}
                 ]} 
                 size={100}
-                direction="row"></List>
+                direction="row"
+                rounded="full"
+                reOrganize={1}></List>
             <Content Background="#52a2a1" id={1}
                      title="Primeiro conteudo"
                      text="Aqui vem os textos simples (geralmente são frases curtas e marcantes)"
@@ -44,7 +45,6 @@ function Home(){
             Background="#6EACDA"
             direction="col"
             ImageSrc={Background}/>
-            <Footer SrcLogo={Logo}></Footer>
         </div>
     )
 }

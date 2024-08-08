@@ -1,10 +1,10 @@
 
 import styled from 'styled-components';
 
-function LogoIten({src,text, imageSize, id, qtd, bgColor}){
+function LogoIten({src,text, imageSize, id, qtd, bgColor, direction, reOrganize, rounded}){
 
     function priorityLevel(){
-        if(window.innerWidth > 1013){
+        if(window.innerWidth > 1013 && direction == "row" && reOrganize == 1){
             if(id%2==0){
                 return 0;
             }
@@ -41,11 +41,11 @@ function LogoIten({src,text, imageSize, id, qtd, bgColor}){
 
     return(
         <>
-        <Iten className={`h-full w-1/${qtd} grow flex flex-col items-center justify-center`}>
-            <ImageBackground className={`rounded-full flex items-center justify-center my-4`} style={{backgroundColor: bgColor}}>
+        <Iten className={`h-full w-1/${qtd} mx-4 grow flex flex-col items-center justify-center`}>
+            <ImageBackground className={`rounded-${rounded} flex items-center justify-center my-4`} style={{backgroundColor: bgColor}}>
                 {src}
             </ImageBackground>
-            <h3 className="bold">{text}</h3>
+            <h3 className="font-bold tracking-wider">{text}</h3>
         </Iten>
         </>
     )

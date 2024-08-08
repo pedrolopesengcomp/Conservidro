@@ -1,25 +1,44 @@
 import PropTypes from 'prop-types';
 import LogoIten from './LogoIten';
 
-function List({backgroundColor, src,size, title, direction}){
+function List({backgroundColor, src,size, title, direction, text, ImageAux, width, reOrganize, rounded}){
     var id = 0;
 
-    function invertDirection(){
-        return direction == "col" ? "row" : "col";
-    }
+    function setCol(){
+        let dr = direction == "col" ? "row" : "col";
+        let wdt = direction == "col" ? "1/2" : "10/12";
+        let items = direction == "col" ? "" : "center";
+        let fontSize = direction == "col" ? "7xl" : "4xl";
 
-    function setWidth(){
-        return direction == "col" ? "1/2" : "10/12"
+        let object = {
+            dr: dr,
+            wdt : wdt,
+            items : items,
+            font : fontSize
+        }
+
+        return object;
     }
 
     return(
-        <div className={`w-full flex flex-${invertDirection()} items-center justify-around`} style={{backgroundColor: backgroundColor}}>
-            <h2 className='text-4xl font-light my-8'>{title}</h2>
-            <ul className={`w-${setWidth()} m-auto min-h-80 flex justify-center flex-wrap items-center flex-${direction}`}>
+        <div className={`w-${width} flex flex-${setCol().dr} justify-around items-${setCol().items}`} style={{backgroundColor: backgroundColor}}>
+            <div className="w-1/2">
+                <h2 className={`text-${setCol().font} font-light my-8 text-center`}>{title}</h2>
+                
+                {text && 
+                    <p className='text-center text-xl'>{text}</p>
+                }
+                {ImageAux &&
+                    <img src={ImageAux} className='size-40'></img>
+                }
+            </div>
+    
+            <ul className={`w-${setCol().wdt} m-auto min-h-80 flex justify-center flex-wrap items-center flex-${direction}`}>
                 {src.map((e)=>{
                     id++;
                     return(
-                        <LogoIten src={e.src} text ={e.txt} imageSize = {size} id={id} qtd={src.size} bgColor={e.bgColor}></LogoIten>
+                        <LogoIten src={e.src} text ={e.txt} imageSize = {size} id={id} qtd={src.length} bgColor={e.bgColor} 
+                        direction={direction} reOrganize={reOrganize} rounded={rounded}></LogoIten>
                     )
                 })
                 }
