@@ -6,27 +6,35 @@ import Footer from "../containers/Footer";
 import Background from "../../images/backgroundHome.png";
 import Logo from "../../images/Logo.png";
 
-import { BsCalendar2CheckFill, BsCash } from "react-icons/bs";
-
-import { BsCashStack } from "react-icons/bs";
+import { FcOnlineSupport} from "react-icons/fc";
+import { FcPlanner } from "react-icons/fc";
+import { FcFactory } from "react-icons/fc";
+import { FcLock } from "react-icons/fc";
+import { FcMultipleDevices } from "react-icons/fc";
 
 function Home(){
-    const calendar = <BsCalendar2CheckFill></BsCalendar2CheckFill>
-    const cash = <BsCashStack></BsCashStack>
+
+    const support = <FcOnlineSupport className="size-20 m-auto my-auto"></FcOnlineSupport>
+    const calendar = <FcPlanner className="size-20 m-auto my-auto"></FcPlanner>
+    const factory = <FcFactory className="size-20"></FcFactory>
+    const lock = <FcLock className="size-20"></FcLock>
+    const device = <FcMultipleDevices className="size-20"></FcMultipleDevices>
 
 
     return(
         <div className="relative top-24">
-            <Principal title="Referência e qualidade" subtitle="Somos conhecidos por cordialidade" background={Background}></Principal>
-            <List backgroundColor={"#468a89"} 
+            <Principal title="Referência e qualidade" subtitle="Somos conhecidos por cordialidade" background={Background} size="h-96"></Principal>
+            <List backgroundColor={"#468a89"}
+            title="Por que a conservidro"
             src={[
-                {src:{BsCalendar2CheckFill}, txt:"Vantagem 1"}, 
-                {src:{BsCash}, txt:"Vantagem 2"}, 
-                {src:"aooba", txt:"Vantagem 3"}, 
-                {src:"", txt:"Vantagem 4"}, 
-                {src:"", txt:"Vantagem 5"}
+                {src:support, txt:"Atendimento facilitado", bgColor:"#52a2a1"}, 
+                {src:calendar, txt:"Compromisso com o prazo", bgColor:"#52a2a1"}, 
+                {src:factory, txt:"Produto de qualidade", bgColor:"#52a2a1"}, 
+                {src:lock, txt:"Seguro", bgColor:"#52a2a1"}, 
+                {src:device, txt:"Atendimento multi dispositivos", bgColor:"#52a2a1"}
                 ]} 
-                size={100}></List>
+                size={100}
+                direction="row"></List>
             <Content Background="#52a2a1" id={1}
                      title="Primeiro conteudo"
                      text="Aqui vem os textos simples (geralmente são frases curtas e marcantes)"
@@ -36,7 +44,7 @@ function Home(){
             Background="#6EACDA"
             direction="col"
             ImageSrc={Background}/>
-            <Footer></Footer>
+            <Footer SrcLogo={Logo}></Footer>
         </div>
     )
 }

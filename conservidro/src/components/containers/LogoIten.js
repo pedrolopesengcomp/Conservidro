@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 
-function LogoIten({src,text, imageSize, id, qtd }){
+function LogoIten({src,text, imageSize, id, qtd, bgColor}){
 
     function priorityLevel(){
         if(window.innerWidth > 1013){
@@ -36,16 +36,16 @@ function LogoIten({src,text, imageSize, id, qtd }){
 
     function teste(){
         console.log(src);
-        return src.src;
+        return <src></src>;
     }
 
     return(
         <>
         <Iten className={`h-full w-1/${qtd} grow flex flex-col items-center justify-center`}>
-            <ImageBackground className="rounded-full">
+            <ImageBackground className={`rounded-full flex items-center justify-center my-4`} style={{backgroundColor: bgColor}}>
                 {src}
             </ImageBackground>
-            <h3 className="text-bold">{text}</h3>
+            <h3 className="bold">{text}</h3>
         </Iten>
         </>
     )
