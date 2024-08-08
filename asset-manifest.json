@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/Conservidro/static/css/main.bc3f8019.css",
-    "main.js": "/Conservidro/static/js/main.924bccdf.js",
+    "main.css": "/Conservidro/static/css/main.00fdfa8a.css",
+    "main.js": "/Conservidro/static/js/main.dbefe331.js",
     "static/js/453.17cd031b.chunk.js": "/Conservidro/static/js/453.17cd031b.chunk.js",
     "static/media/backgroundHome.png": "/Conservidro/static/media/backgroundHome.40245761aefbf1fa7343.png",
+    "static/media/backgroundAbout.png": "/Conservidro/static/media/backgroundAbout.1a3154054dd16fd5c362.png",
     "static/media/Logo.png": "/Conservidro/static/media/Logo.3d437c521615b3e6d2a7.png",
     "index.html": "/Conservidro/index.html",
-    "main.bc3f8019.css.map": "/Conservidro/static/css/main.bc3f8019.css.map",
-    "main.924bccdf.js.map": "/Conservidro/static/js/main.924bccdf.js.map",
+    "main.00fdfa8a.css.map": "/Conservidro/static/css/main.00fdfa8a.css.map",
+    "main.dbefe331.js.map": "/Conservidro/static/js/main.dbefe331.js.map",
     "453.17cd031b.chunk.js.map": "/Conservidro/static/js/453.17cd031b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc3f8019.css",
-    "static/js/main.924bccdf.js"
+    "static/css/main.00fdfa8a.css",
+    "static/js/main.dbefe331.js"
   ]
 }
