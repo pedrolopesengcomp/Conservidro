@@ -4,31 +4,41 @@ import Content from "../containers/Content";
 
 import Background from "../../images/backgroundHome.png";
 
+import { FcPhone } from "react-icons/fc";
+import { FaWhatsapp } from "react-icons/fa";
+
 function Contact(){
+    const phone = <FcPhone className="size-24" />;
+    const wpp = <FaWhatsapp className="size-24"/>;
+
     return(
-        <body>
-            <Principal title="Somos uma empresa confiavel" 
-            size="h-96" 
-            background={Background}
-            ></Principal>
+        
+        <div className="relative top-24">
+            <Content Background="#52a2a1" id={1}
+                title="Diga como funciona o contato"
+                text="Aqui vem os textos simples (geralmente são frases curtas e marcantes)"
+                direction="col">
+            </Content>
             <List 
             width="full"
             backgroundColor={"#6EACDA"}
-            title="Tópico sobre a empresa"
-            text="Aqui se explica como foi criada"
+            title="Entre em contato"
             src={[
-                {txt:"Opcao de contato", bgColor:"#52a2a1"},
-                {txt:"Opcao de contato", bgColor:"#52a2a1"},
+                {src:phone,txt:"Opcao de contato", bgColor:"#52a2a1"},
+                {src:wpp,txt:"Opcao de contato", bgColor:"#52a2a1"},
                 {txt:"Opcao de contato", bgColor:"#52a2a1"}
                 
             ]}
-            reOrganize={0}
+            reOrganize={1}
             size={100} 
-            direction="col"
+            direction="row"
             ImageAux={""}
             rounded="rounded-full">
             </List>
-        </body>
+
+            
+            
+        </div>
     )
 }
 

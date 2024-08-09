@@ -15,15 +15,15 @@ function Services(){
     return(
         <div className="relative top-24">
             <List
-                backgroundColor=""
+                backgroundColor="#52a2a1"
                 src={[
-                    {src:shipped,txt:"Serviço 1", bgColor:"#00000"},
-                    {txt:"Serviço 2", bgColor:"#00000"},
-                    {txt:"Serviço 3", bgColor:"#00000"},
-                    {txt:"Serviço 4", bgColor:"#00000"},
-                    {txt:"Serviço 5", bgColor:"#00000"},
-                    {txt:"Serviço 6", bgColor:"#00000"},
-                    {txt:"Serviço 7", bgColor:"#00000"}]}
+                    {src:shipped,txt:"Serviço 1", bgColor:"#53a6a5"},
+                    {txt:"Serviço 2", bgColor:"#53a6a5"},
+                    {txt:"Serviço 3", bgColor:"#53a6a5"},
+                    {txt:"Serviço 4", bgColor:"#53a6a5"},
+                    {txt:"Serviço 5", bgColor:"#53a6a5"},
+                    {txt:"Serviço 6", bgColor:"#53a6a5"},
+                    {txt:"Serviço 7", bgColor:"#53a6a5"}]}
                     direction="row"
                     size={200}
                     type="card"

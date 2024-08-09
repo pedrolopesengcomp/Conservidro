@@ -32,6 +32,7 @@ function LogoIten({src,text, imageSize, id, qtd, bgColor, direction, reOrganize,
     const ImageBackground = styled.div`
         width:${imageSize + 50}px;
         height:${imageSize + 50}px;
+        background-color: ${bgColor};
     `;
 
     function teste(){
@@ -42,7 +43,7 @@ function LogoIten({src,text, imageSize, id, qtd, bgColor, direction, reOrganize,
     return(
         <>
         <Iten className={`h-full w-1/${qtd} mx-4 grow flex flex-col items-center justify-center`}>
-            <ImageBackground className={`${rounded} flex items-center justify-center my-4`} style={{backgroundColor: bgColor}}>
+            <ImageBackground className={`${rounded} flex items-center justify-center my-4`}>
                 {src}
             </ImageBackground>
             <h3 className="font-bold tracking-wider">{text}</h3>

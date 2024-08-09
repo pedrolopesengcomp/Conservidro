@@ -25,7 +25,7 @@ function Content({title, text, ImageSrc, Background, id, direction}){
     }
 
     return(
-        <Section className={`w-full h-${defineHeight()} flex justify-center items-center flex-col`}>
+        <Section className={`w-full min-h-${defineHeight()} flex justify-center items-center flex-col`}>
             <article className={`w-9/12 h-full flex flex-${direction} items-center `}>
                 <header className="h-36 flex-none flex items-center">
                     <h3 className="text-4xl text-bold">{title}</h3>

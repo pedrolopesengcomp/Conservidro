@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import LogoIten from './LogoIten';
+import Card from './Card';
 
 function List({backgroundColor, src,size, title, direction, text, ImageAux, width, reOrganize, rounded, type}){
     var id = 0;
@@ -23,12 +24,11 @@ function List({backgroundColor, src,size, title, direction, text, ImageAux, widt
     function verifyType(){
         if(type == "card"){
             return(
-                    <ul className={`${setCol().wdt} m-auto min-h-80 flex justify-center flex-wrap items-center flex-${direction}`}>
+                    <ul className={`${setCol().wdt} m-auto min-h-96 flex justify-center flex-wrap items-center flex-${direction}`}>
                     {src.map((e)=>{
                         id++;
                         return(
-                            <LogoIten src={e.src} text ={e.txt} imageSize = {size} id={id} qtd={src.length} bgColor={e.bgColor} 
-                            direction={direction} reOrganize={reOrganize} rounded={rounded}></LogoIten>
+                            <Card bgColor={e.bgColor} src={e.src} imageSize={size} rounded={e.rounded} text={e.txt}></Card>
                         )
                     })
                     }
