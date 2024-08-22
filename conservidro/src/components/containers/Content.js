@@ -25,13 +25,13 @@ function Content({title, text, ImageSrc, Background, id, direction}){
     }
 
     return(
-        <Section className={`w-full min-h-${defineHeight()} flex justify-center items-center flex-col`}>
+        <Section className={`w-full min-h-${defineHeight()} flex justify-center items-center flex-col relative`}>
             <article className={`w-9/12 h-full flex flex-${direction} items-center `}>
                 <header className="h-36 flex-none flex items-center">
                     <h3 className="text-4xl text-bold">{title}</h3>
                 </header>
-                <div className={`flex-none flex w-full items-center flex-wrap p-8`}>
-                    <p className="grow text-center">
+                <div className={`flex-none flex w-full items-center flex-wrap pb-24`}>
+                    <p className="grow text-center text-xl">
                         {text}
                     </p>
 

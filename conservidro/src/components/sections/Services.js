@@ -13,7 +13,7 @@ function Services(){
     const shipped = <FcShipped className="size-40"></FcShipped>
 
     return(
-        <div className="relative top-24">
+        <div className="relative" id="services">
             <List
                 backgroundColor="#52a2a1"
                 src={[

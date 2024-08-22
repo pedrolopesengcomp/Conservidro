@@ -12,7 +12,7 @@ function About(){
     const approval = <FcApproval className="size-24"></FcApproval>
 
     return(
-        <div className="relative top-24" size="5/6" >
+        <div className="relative" size="5/6" id="about" >
             <Principal title="Somos uma empresa confiavel" 
             size="h-96" 
             background={Background}

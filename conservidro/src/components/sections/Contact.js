@@ -13,7 +13,7 @@ function Contact(){
 
     return(
         
-        <div className="relative top-24">
+        <div className="relative" id="contact">
             <Content Background="#52a2a1" id={1}
                 title="Diga como funciona o contato"
                 text="Aqui vem os textos simples (geralmente são frases curtas e marcantes)"

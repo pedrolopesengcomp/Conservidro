@@ -7,7 +7,7 @@ import { LuMenu } from "react-icons/lu";
 
 import React, {useState, useEffect} from 'react';
 
-function NavBar(){
+function NavBar({YoffsetHome, YoffsetAbout, YoffsetServices, YoffsetContact}){
 
     const [navHeight, setNavHeight] = useState(0);
 
@@ -39,7 +39,10 @@ function NavBar(){
             <nav className="flex h-full w-full justify-center items-center">
                 <ul className="flex h-full md:w-11/12 w-full md:flex-row flex-col items-center">
                     <div className='md:h-full h-1/3 w-full md:w-1/3  m-auto flex justify-around items-center'>
-                        <Link to="/Conservidro/"><img className="flex-none size-24" src={Logo}></img></Link>
+                        <Link to="/Conservidro/" 
+                        onClick={()=>{
+                            window.scrollTo({top:YoffsetHome, behavior:'smooth'})
+                        }}><img className="flex-none size-24" src={Logo}></img></Link>
                         
                 
                         <LuMenu color="white" className='size-8 cursor-pointer md:hidden' onClick={()=>{
@@ -51,13 +54,19 @@ function NavBar(){
                     md:flex flex-grow md:justify-end justify-around items-center
                     md:w-2/3 w-full md:h-full flex-row md:flex-row flex-col 
                     transition-all`}>
-                        <li className="text-white mx-4 text-center">
+                        <li className="text-white mx-4 text-center" onClick={()=>{
+                            window.scrollTo({top:YoffsetAbout, behavior:'smooth'})
+                        }}>
                             <Link to="/Conservidro/sobre-nos" className="px-4 py-4 hover:text-black hover:bg-blue-400 rounded-lg transition-all">Saiba mais</Link>
                         </li>
-                        <li className="text-white mx-4 text-center">
+                        <li className="text-white mx-4 text-center" onClick={()=>{
+                            window.scrollTo({top:YoffsetServices, behavior:'smooth'})
+                        }}>
                             <Link to="/Conservidro/servicos" className="px-4 py-4 hover:text-black hover:bg-blue-400 rounded-lg transition-all">Serviços</Link>
                         </li>
-                        <li className="text-white mx-4 text-center">
+                        <li className="text-white mx-4 text-center" onClick={()=>{
+                            window.scrollTo({top:YoffsetContact, behavior:'smooth'})
+                        }}>
                             <Link to="/Conservidro/contato" className="px-4 py-4 hover:text-black hover:bg-blue-400 rounded-lg transition-all">Contato</Link>
                         </li>
                     </div>

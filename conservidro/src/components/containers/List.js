@@ -2,8 +2,16 @@ import PropTypes from 'prop-types';
 import LogoIten from './LogoIten';
 import Card from './Card';
 
-function List({backgroundColor, src,size, title, direction, text, ImageAux, width, reOrganize, rounded, type}){
+import styled from 'styled-components';
+
+function List({backgroundColor, src,size, title, direction, text, ImageAux, width, reOrganize, rounded, type, backgroundImage}){
     var id = 0;
+
+    const Div = styled.div`
+        background-color: ${backgroundColor};
+        background-image: url('${backgroundImage}');
+        background-position: center;
+    `;
 
     function setCol(){
         let dr = direction == "col" ? "flex-row" : "flex-col";
@@ -24,7 +32,7 @@ function List({backgroundColor, src,size, title, direction, text, ImageAux, widt
     function verifyType(){
         if(type == "card"){
             return(
-                    <ul className={`${setCol().wdt} m-auto min-h-96 flex justify-center flex-wrap items-center flex-${direction}`}>
+                    <ul className={`${setCol().wdt} m-auto min-h-96 flex justify-center flex-wrap items-center flex-${direction} drop-shadow-md`}>
                     {src.map((e)=>{
                         id++;
                         return(
@@ -39,7 +47,7 @@ function List({backgroundColor, src,size, title, direction, text, ImageAux, widt
             return(
             
     
-            <ul className={`${setCol().wdt} m-auto min-h-80 flex justify-center flex-wrap items-center flex-${direction}`}>
+            <ul className={`${setCol().wdt} m-auto min-h-80 flex justify-center flex-wrap items-center flex-${direction} drop-shadow-md`}>
                 {src.map((e)=>{
                     id++;
                     return(
@@ -57,19 +65,19 @@ function List({backgroundColor, src,size, title, direction, text, ImageAux, widt
 
 
     return(
-        <div className={`${width} flex ${setCol().dr} justify-around ${setCol().items}`} style={{backgroundColor: backgroundColor}}>
+        <Div className={`${width} flex ${setCol().dr} justify-around ${setCol().items} text-white relative -top-8 rounded-3xl`}>
             <div className="w-1/2">
-                <h2 className={`${setCol().font} font-light my-8 text-center`}>{title}</h2>
+                <h2 className={`${setCol().font} font my-8 text-center`}>{title}</h2>
                 
                 {text && 
-                    <p className='text-center text-xl'>{text}</p>
+                    <p className='text-center text-xl drop-shadow-md'>{text}</p>
                 }
                 {ImageAux &&
                     <img src={ImageAux} className='size-40'></img>
                 }
             </div>
             {verifyType()}
-        </div>
+        </Div>
     )
 }
 

@@ -2,7 +2,13 @@ import Principal from "../containers/Principal";
 import List from "../containers/List"
 import Content from "../containers/Content";
 
+//Paginas importadas
+import Services from './Services';
+import Contact from './Contact';
+import About from './About';
+
 import Background from "../../images/backgroundHome.png";
+import WindowBackground from "../../images/windowBackground.png";
 
 import { FcOnlineSupport} from "react-icons/fc";
 import { FcPlanner } from "react-icons/fc";
@@ -18,13 +24,18 @@ function Home(){
     const lock = <FcLock className="size-20"></FcLock>
     const device = <FcMultipleDevices className="size-20"></FcMultipleDevices>
 
+    
 
     return(
-        <div className="relative top-24">
-            <Principal title="Referência e qualidade" subtitle="Somos conhecidos por cordialidade" background={Background} size="h-96"></Principal>
-            <List backgroundColor={"#468a89"}
+        <div className="relative" id="home">
+            <Principal title="Excelência em manutenção corretiva e preventiva" 
+            subtitle="Invista na estética e segurança de seu lar!" 
+            background={Background} size="h-96"></Principal>
+            <List 
+            backgroundColor={"#468a89"}
+            backgroundImage={WindowBackground}
             width="full"
-            title="Por que a conservidro"
+            title="A qualidade em destaque!"
             src={[
                 {src:support, txt:"Atendimento facilitado", bgColor:"#52a2a1"}, 
                 {src:calendar, txt:"Compromisso com o prazo", bgColor:"#52a2a1"}, 
@@ -36,9 +47,10 @@ function Home(){
                 direction="row"
                 rounded="rounded-full"
                 reOrganize={1}></List>
-            <Content Background="#52a2a1" id={1}
-                     title="Primeiro conteudo"
-                     text="Aqui vem os textos simples (geralmente são frases curtas e marcantes)"
+            <Content Background="white" id={1}
+                     title="Por que a manutenção corretiva?"
+                     text="Manter seus vidros residenciais em perfeito estado é essencial para garantir a segurança
+e durabilidade e estética de seu lar!"
                      direction="col"></Content>
             <Content title="Segundo" 
             text="Aqui vem os textos com imagens ao lado, são geralmente ilustrações" 
