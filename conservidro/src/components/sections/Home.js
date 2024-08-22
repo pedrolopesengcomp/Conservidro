@@ -30,11 +30,12 @@ function Home(){
         <div className="relative" id="home">
             <Principal title="Excelência em manutenção corretiva e preventiva" 
             subtitle="Invista na estética e segurança de seu lar!" 
-            background={Background} size="h-96"></Principal>
-            <List 
+            background={Background} size="h-[36rem]"></Principal>
+            <List     
             backgroundColor={"#468a89"}
             backgroundImage={WindowBackground}
             width="full"
+            color="white"
             title="A qualidade em destaque!"
             src={[
                 {src:support, txt:"Atendimento facilitado", bgColor:"#52a2a1"}, 
@@ -52,9 +53,26 @@ function Home(){
                      text="Manter seus vidros residenciais em perfeito estado é essencial para garantir a segurança
 e durabilidade e estética de seu lar!"
                      direction="col"></Content>
+            
+            <List     
+            backgroundColor={"#c2c2c2"}
+            width="full"
+            color="black"
+            title="Garantia e disponibilidade"
+            src={[
+                {src:support, txt:"Peças de alta qualidade", bgColor:"#c2c2c2"},
+                {src:support, txt:"Orçamento imediato", bgColor:"#52a2a1"}, 
+                {src:calendar, txt:"Avaliação online facilitada", bgColor:"#52a2a1"}
+                ]} 
+                size={70}
+                direction="row"
+                rounded="rounded-full"
+                reOrganize={1}></List>  
+
+            
             <Content title="Segundo" 
             text="Aqui vem os textos com imagens ao lado, são geralmente ilustrações" 
-            Background="#6EACDA"
+            Background=""
             direction="col"
             ImageSrc={Background}/>
         </div>

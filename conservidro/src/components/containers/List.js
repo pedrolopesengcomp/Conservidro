@@ -4,7 +4,7 @@ import Card from './Card';
 
 import styled from 'styled-components';
 
-function List({backgroundColor, src,size, title, direction, text, ImageAux, width, reOrganize, rounded, type, backgroundImage}){
+function List({backgroundColor, src,size, title, direction, text, ImageAux, width, reOrganize, rounded, type, backgroundImage, color}){
     var id = 0;
 
     const Div = styled.div`
@@ -15,9 +15,10 @@ function List({backgroundColor, src,size, title, direction, text, ImageAux, widt
 
     function setCol(){
         let dr = direction == "col" ? "flex-row" : "flex-col";
-        let wdt = direction == "col" ? "w-1/2" : "w-10/12";
+        let wdt = direction == "col" ? "w-5/12" : "w-10/12";
         let items = direction == "col" ? "" : "items-center";
-        let fontSize = direction == "col" ? "text-7xl" : "text-4xl";
+        let fontSize = direction == "col" ? "text-5xl" : "text-4xl";
+        
 
         let object = {
             dr: dr,
@@ -65,9 +66,10 @@ function List({backgroundColor, src,size, title, direction, text, ImageAux, widt
 
 
     return(
-        <Div className={`${width} flex ${setCol().dr} justify-around ${setCol().items} text-white relative -top-8 rounded-3xl`}>
-            <div className="w-1/2">
-                <h2 className={`${setCol().font} font my-8 text-center`}>{title}</h2>
+        <Div className={`w-full flex ${setCol().dr} justify-around ${setCol().items} text-${color} relative -top-16 rounded-3xl drop-shadow-lg py-16`}>
+            
+            <div className={`w-${width} grow`}>
+                <h2 className={`${setCol().font} text-center grow`}>{title}</h2>
                 
                 {text && 
                     <p className='text-center text-xl drop-shadow-md'>{text}</p>

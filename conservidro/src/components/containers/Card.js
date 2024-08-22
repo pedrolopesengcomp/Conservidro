@@ -12,7 +12,7 @@ function Card({src,text, imageSize, bgColor, rounded}){
     `
 
     return(
-        <CardIten className="flex items-center justify-center flex-col mx-8 my-8 h-96 w-80 rounded shadow-md hover:shadow-lg transition-all">
+        <CardIten className="flex items-center justify-center flex-col mx-16 my-8 h-96 w-80 rounded shadow-md hover:shadow-lg transition-all">
             <ImageBackground className={`${rounded} flex items-center justify-center my-4`}>
                 {src}
             </ImageBackground>

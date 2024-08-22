@@ -13,10 +13,16 @@ function About(){
 
     return(
         <div className="relative" size="5/6" id="about" >
-            <Principal title="Somos uma empresa confiavel" 
-            size="h-96" 
-            background={Background}
-            ></Principal>
+            <Content 
+                title="Você em primeiro lugar!"
+                text="Nós valorizamos o conforto e a segurança do seu lar. Temos como princípios"
+                direction="col"
+                list={[
+                    "Confiabilidade",
+                    "Excelência", 
+                    "Sustentabilidade"
+                ]}
+            ></Content>
             <List 
             width="full"
             backgroundColor={"#6EACDA"}

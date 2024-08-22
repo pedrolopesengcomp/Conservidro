@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-function Content({title, text, ImageSrc, Background, id, direction}){
+function Content({title, text, ImageSrc, Background, id, direction, list}){
     function defineHeight(){
         if((ImageSrc == undefined)){
             return 64;
@@ -25,7 +25,7 @@ function Content({title, text, ImageSrc, Background, id, direction}){
     }
 
     return(
-        <Section className={`w-full min-h-${defineHeight()} flex justify-center items-center flex-col relative`}>
+        <Section className={`w-full min-h-${defineHeight()} flex justify-center items-center flex-col relative mb-16`}>
             <article className={`w-9/12 h-full flex flex-${direction} items-center `}>
                 <header className="h-36 flex-none flex items-center">
                     <h3 className="text-4xl text-bold">{title}</h3>
@@ -33,11 +33,20 @@ function Content({title, text, ImageSrc, Background, id, direction}){
                 <div className={`flex-none flex w-full items-center flex-wrap pb-24`}>
                     <p className="grow text-center text-xl">
                         {text}
+                        {list && 
+                        list.map((e)=>{
+                            return(
+                                <li className='my-4'>{e}</li>
+                            )
+                            })
+                        }
                     </p>
 
                     {ImageSrc &&
                             <img className="shrink w-96"src={ImageSrc} ></img>
                     }
+
+                    
 
                 </div>
             </article>

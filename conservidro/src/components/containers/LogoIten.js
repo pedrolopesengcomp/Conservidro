@@ -1,7 +1,9 @@
 
 import styled from 'styled-components';
 
-function LogoIten({src,text, imageSize, id, qtd, bgColor, direction, reOrganize, rounded}){
+function LogoIten({src,text, imageSize, id, qtd, bgColor, direction, reOrganize, rounded, }){
+
+    let mx = qtd>=3? 'mx-5' : '';
 
     function priorityLevel(){
         if(window.innerWidth > 1013 && direction == "row" && reOrganize == 1){
@@ -34,16 +36,11 @@ function LogoIten({src,text, imageSize, id, qtd, bgColor, direction, reOrganize,
         height:${imageSize + 50}px;
         background-color: ${bgColor};
     `;
-
-    function teste(){
-        console.log(src);
-        return <src></src>;
-    }
-
+    
     return(
         <>
-        <Iten className={`h-full w-1/${qtd} mx-4 grow flex flex-col items-center justify-center`}>
-            <ImageBackground className={`${rounded} flex items-center justify-center my-4`}>
+        <Iten className={`h-full w-1/${qtd} ${mx} flex flex-col items-center justify-center`}>
+            <ImageBackground className={`${rounded} flex items-center justify-center`}>
                 {src}
             </ImageBackground>
             <h3 className="font-bold tracking-wider">{text}</h3>

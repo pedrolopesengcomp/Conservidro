@@ -15,15 +15,13 @@ function Services(){
     return(
         <div className="relative" id="services">
             <List
+                title="Serviços prestados"
                 backgroundColor="#52a2a1"
                 src={[
-                    {src:shipped,txt:"Serviço 1", bgColor:"#53a6a5"},
-                    {txt:"Serviço 2", bgColor:"#53a6a5"},
-                    {txt:"Serviço 3", bgColor:"#53a6a5"},
-                    {txt:"Serviço 4", bgColor:"#53a6a5"},
-                    {txt:"Serviço 5", bgColor:"#53a6a5"},
-                    {txt:"Serviço 6", bgColor:"#53a6a5"},
-                    {txt:"Serviço 7", bgColor:"#53a6a5"}]}
+                    {src:shipped,txt:"Portas e janelas - BLINDEX", bgColor:"#53a6a5"},
+                    {src:shipped,txt:"Box de banheiro", bgColor:"#53a6a5"},
+                    {txt:"Cortina de vidro", bgColor:"#53a6a5"},
+                    {txt:"Esquadria de alumínio", bgColor:"#53a6a5"}]}
                     direction="row"
                     size={200}
                     type="card"
