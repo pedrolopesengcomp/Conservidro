@@ -1,18 +1,25 @@
 {
   "files": {
-    "main.css": "/Conservidro/static/css/main.60210821.css",
-    "main.js": "/Conservidro/static/js/main.7b2c17b4.js",
+    "main.css": "/Conservidro/static/css/main.a4e85fa6.css",
+    "main.js": "/Conservidro/static/js/main.23dc635d.js",
     "static/js/453.17cd031b.chunk.js": "/Conservidro/static/js/453.17cd031b.chunk.js",
-    "static/media/backgroundHome.png": "/Conservidro/static/media/backgroundHome.40245761aefbf1fa7343.png",
+    "static/media/esquadriaDeAluminio.png": "/Conservidro/static/media/esquadriaDeAluminio.258126359a7c9816aaac.png",
+    "static/media/windowcourtain.png": "/Conservidro/static/media/windowcourtain.9eb4f096dafcca66c6f3.png",
+    "static/media/backgroundHome.png": "/Conservidro/static/media/backgroundHome.bb9afe7e5916fe36dfab.png",
+    "static/media/aboutUsAuxImage.png": "/Conservidro/static/media/aboutUsAuxImage.3c4632b21be5f80af035.png",
     "static/media/backgroundAbout.png": "/Conservidro/static/media/backgroundAbout.1a3154054dd16fd5c362.png",
     "static/media/Logo.png": "/Conservidro/static/media/Logo.3d437c521615b3e6d2a7.png",
+    "static/media/window.png": "/Conservidro/static/media/window.74f39325d15f8acdb20d.png",
+    "static/media/windowBackground.png": "/Conservidro/static/media/windowBackground.b2bace6018e9927a65b4.png",
+    "static/media/bathroom.png": "/Conservidro/static/media/bathroom.128a64034f3d0d655db7.png",
+    "static/media/whatsapp.png": "/Conservidro/static/media/whatsapp.ac93e6adff7392cab368.png",
     "index.html": "/Conservidro/index.html",
-    "main.60210821.css.map": "/Conservidro/static/css/main.60210821.css.map",
-    "main.7b2c17b4.js.map": "/Conservidro/static/js/main.7b2c17b4.js.map",
+    "main.a4e85fa6.css.map": "/Conservidro/static/css/main.a4e85fa6.css.map",
+    "main.23dc635d.js.map": "/Conservidro/static/js/main.23dc635d.js.map",
     "453.17cd031b.chunk.js.map": "/Conservidro/static/js/453.17cd031b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.60210821.css",
-    "static/js/main.7b2c17b4.js"
+    "static/css/main.a4e85fa6.css",
+    "static/js/main.23dc635d.js"
   ]
 }
