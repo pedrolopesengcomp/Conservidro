@@ -50,8 +50,7 @@ function Home(){
                 reOrganize={1}></List>
             <Content Background="white" id={1}
                      title="Por que a manutenção corretiva?"
-                     text="Manter seus vidros residenciais em perfeito estado é essencial para garantir a segurança
-e durabilidade e estética de seu lar!"
+                     text={["Manter seus vidros residenciais em perfeito estado é essencial para garantir a segurança e durabilidade e estética de seu lar!"]}
                      direction="col"></Content>
             
             <List     
@@ -68,13 +67,6 @@ e durabilidade e estética de seu lar!"
                 direction="row"
                 rounded="rounded-full"
                 reOrganize={1}></List>  
-
-            
-            <Content title="Segundo" 
-            text="Aqui vem os textos com imagens ao lado, são geralmente ilustrações" 
-            Background=""
-            direction="col"
-            ImageSrc={Background}/>
         </div>
     )
 }

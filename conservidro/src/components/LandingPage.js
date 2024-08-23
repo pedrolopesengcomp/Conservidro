@@ -28,8 +28,8 @@ function LandingPage({YoffsetHome
         }}>
             <Home >
             </Home>
-            <Services id="services"></Services>
             <About id="about"></About>
+            <Services id="services"></Services>
             <Contact id="contact"></Contact>
         </div>
     )

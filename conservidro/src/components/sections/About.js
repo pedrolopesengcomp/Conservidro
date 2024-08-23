@@ -3,6 +3,8 @@ import List from "../containers/List"
 import Content from "../containers/Content";
 
 import Background from "../../images/backgroundAbout.png";
+import AuxImage from '../../images/aboutUsAuxImage.png';
+
 import { FcCalendar } from "react-icons/fc";
 import { FcApproval } from "react-icons/fc";
 
@@ -15,30 +17,24 @@ function About(){
         <div className="relative" size="5/6" id="about" >
             <Content 
                 title="Você em primeiro lugar!"
-                text="Nós valorizamos o conforto e a segurança do seu lar. Temos como princípios"
+                text={["Nós valorizamos o conforto e a segurança do seu lar. Temos como princípios"]}
                 direction="col"
                 list={[
                     "Confiabilidade",
                     "Excelência", 
                     "Sustentabilidade"
                 ]}
+                ImageSrc={AuxImage}
             ></Content>
-            <List 
-            width="full"
-            backgroundColor={"#6EACDA"}
-            title="Tópico sobre a empresa"
-            text="Aqui se explica os valores, missão, funcionamento e mais sobre a empresa"
-            src={[
-                {src:calendar,txt:"Desde xx/xx/xxxx", bgColor:"#52a2a1"},
-                {src:approval,txt:"Cerficiados ISO-xxxx", bgColor:"#52a2a1"}
-                
-            ]}
-            reOrganize={0}
-            size={150} 
-            direction="col"
-            ImageAux={""}
-            rounded="rounded-full"
-            ></List>
+            <Content 
+                title="No mercado desde 2013!"
+                text={["Somos uma empresa do grupo vidro clean que se desenvolve mais e mais todos os dias!",
+                    "Hoje em dia atendemos mais de"
+                ]}
+                highlight="3000 clientes!"
+                direction="col"
+            ></Content>
+            
         </div>
     )
 }
