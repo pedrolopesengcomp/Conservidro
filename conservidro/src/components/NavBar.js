@@ -11,14 +11,6 @@ function NavBar({YoffsetHome, YoffsetAbout, YoffsetServices, YoffsetContact}){
 
     const [navHeight, setNavHeight] = useState(0);
 
-    function generateHr(){
-        if(window.innerWidth<728){
-            return(<hr className="my-4 w-24"/>);
-        }
-        else{
-            return (<br></br>)
-        }
-    }
 
     function toggleNavBar(){
         let navBar = document.getElementById("navBar");
@@ -55,16 +47,19 @@ function NavBar({YoffsetHome, YoffsetAbout, YoffsetServices, YoffsetContact}){
                     md:w-2/3 w-full md:h-full flex-row md:flex-row flex-col 
                     transition-all`}>
                         <li className="text-white mx-4 text-center" onClick={()=>{
+                            toggleNavBar();
                             window.scrollTo({top:YoffsetAbout, behavior:'smooth'})
                         }}>
                             <Link to="/Conservidro/sobre-nos" className="px-4 py-4 hover:text-black hover:bg-blue-400 rounded-lg transition-all">Saiba mais</Link>
                         </li>
                         <li className="text-white mx-4 text-center" onClick={()=>{
+                            toggleNavBar();
                             window.scrollTo({top:YoffsetServices, behavior:'smooth'})
                         }}>
                             <Link to="/Conservidro/servicos" className="px-4 py-4 hover:text-black hover:bg-blue-400 rounded-lg transition-all">Serviços</Link>
                         </li>
                         <li className="text-white mx-4 text-center" onClick={()=>{
+                            toggleNavBar();
                             window.scrollTo({top:YoffsetContact, behavior:'smooth'})
                         }}>
                             <Link to="/Conservidro/contato" className="px-4 py-4 hover:text-black hover:bg-blue-400 rounded-lg transition-all">Contato</Link>

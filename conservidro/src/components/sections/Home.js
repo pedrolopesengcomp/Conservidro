@@ -15,6 +15,10 @@ import { FcPlanner } from "react-icons/fc";
 import { FcFactory } from "react-icons/fc";
 import { FcLock } from "react-icons/fc";
 import { FcMultipleDevices } from "react-icons/fc";
+import { FcClock } from "react-icons/fc";
+import { FcCloseUpMode } from "react-icons/fc";
+import { FcApproval } from "react-icons/fc";
+
 
 function Home(){
 
@@ -23,6 +27,9 @@ function Home(){
     const factory = <FcFactory className="size-20"></FcFactory>
     const lock = <FcLock className="size-20"></FcLock>
     const device = <FcMultipleDevices className="size-20"></FcMultipleDevices>
+    const clock = <FcClock className="size-20" color="black"/>
+    const flower = <FcCloseUpMode className="size-20" />
+    const approval = <FcApproval className="size-20"/>;
 
     
 
@@ -38,11 +45,10 @@ function Home(){
             color="white"
             title="A qualidade em destaque!"
             src={[
-                {src:support, txt:"Atendimento facilitado", bgColor:"#52a2a1"}, 
-                {src:calendar, txt:"Compromisso com o prazo", bgColor:"#52a2a1"}, 
-                {src:factory, txt:"Produto de qualidade", bgColor:"#52a2a1"}, 
-                {src:lock, txt:"Seguro", bgColor:"#52a2a1"}, 
-                {src:device, txt:"Atendimento multi dispositivos", bgColor:"#52a2a1"}
+                {src:support, txt:"Profissionais qualificados", bgColor:"#52a2a1"}, 
+                {src:clock, txt:"Atendimento imediato", bgColor:"#52a2a1"}, 
+                {src:flower, txt:"Valorizamos seu lar", bgColor:"#52a2a1"}, 
+                {src:lock, txt:"Seguro", bgColor:"#52a2a1"}
                 ]} 
                 size={100}
                 direction="row"
@@ -54,14 +60,13 @@ function Home(){
                      direction="col"></Content>
             
             <List     
-            backgroundColor={"#c2c2c2"}
-            width="full"
+            backgroundColor={"#6EACDA"}
+            width="6/12"
             color="black"
             title="Garantia e disponibilidade"
+            text="Buscamos sempre realizar sua demanda da forma mais prática e viável possível, sempre priozirando o seu conforto e a sua privacidade dentro de seu lar!"
             src={[
-                {src:support, txt:"Peças de alta qualidade", bgColor:"#c2c2c2"},
-                {src:support, txt:"Orçamento imediato", bgColor:"#52a2a1"}, 
-                {src:calendar, txt:"Avaliação online facilitada", bgColor:"#52a2a1"}
+                {src:approval, txt:"Empresa 100% confiável pelo Reclame Aqui", bgColor:"white"}
                 ]} 
                 size={70}
                 direction="row"

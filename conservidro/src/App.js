@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import Footer from "./components/containers/Footer";
 
 import Logo from "./images/Logo.png";
+import WhatsAppLogo from "./images/whatsapp.png"
 
 function App() {
   const [scroll, setScroll] = useState(0);
@@ -18,6 +19,7 @@ function App() {
   const [YoffsetContact, setYoffsetContact] = useState(0);
 
 
+
   return (
       <Router>
         <NavBar scrollTo={scroll}
@@ -26,7 +28,12 @@ function App() {
         YoffsetServices={YoffsetServices}
         YoffsetContact={YoffsetContact}>
 
+      
+
         </NavBar>
+        <a href='https://w.app/conservidro' className='fixed bottom-8 left-8 z-50'>
+          <img src={WhatsAppLogo} className="size-16"/>
+      </a>
         <Routes>
           <Route path="/conservidro" exact element={<LandingPage 
           YoffsetHome={setYoffsetHome} 

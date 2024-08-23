@@ -16,7 +16,7 @@ function Principal({title, subtitle, text, background, size}){
         
         <Section className={`w-full ${size} flex`} id="principalContainer">
             <div className="w-8/12 flex mx-auto justify-center flex-col">
-                <h1 className="text-4 xl md:text-6xl bold my-4 text-white tracking-wider text-wrap drop-shadow-md">
+                <h1 className="text-4xl md:text-6xl bold my-4 text-white tracking-wider text-wrap drop-shadow-md">
                     {title}
                 </h1>
                 <h2 className="text-xl md:text-2xl text-white drop-shadow-md">

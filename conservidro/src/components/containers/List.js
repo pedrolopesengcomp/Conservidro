@@ -66,13 +66,13 @@ function List({backgroundColor, src,size, title, direction, text, ImageAux, widt
 
 
     return(
-        <Div className={`w-full flex ${setCol().dr} justify-around ${setCol().items} text-${color} relative -top-16 rounded-3xl drop-shadow-lg py-16`}>
+        <Div className={`w-full flex ${setCol().dr} justify-around ${setCol().items} text-${color} relative -top-16 rounded-3xl drop-shadow-lg py-8`}>
             
-            <div className={`w-${width} grow`}>
-                <h2 className={`${setCol().font} text-center grow`}>{title}</h2>
+            <div className={` w-9/12 md:w-${width} grow`}>
+                <h2 className={`text-3xl md:text-2xl md:${setCol().font} text-center grow pb-4`}>{title}</h2>
                 
                 {text && 
-                    <p className='text-center text-xl drop-shadow-md'>{text}</p>
+                    <p className='text-justify md:text-center text-xl drop-shadow-md'>{text}</p>
                 }
                 {ImageAux &&
                     <img src={ImageAux} className='size-40'></img>

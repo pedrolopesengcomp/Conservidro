@@ -43,7 +43,7 @@ function LogoIten({src,text, imageSize, id, qtd, bgColor, direction, reOrganize,
             <ImageBackground className={`${rounded} flex items-center justify-center`}>
                 {src}
             </ImageBackground>
-            <h3 className="font-bold tracking-wider">{text}</h3>
+            <h3 className="font-bold tracking-wider py-4 text-center">{text}</h3>
         </Iten>
         </>
     )

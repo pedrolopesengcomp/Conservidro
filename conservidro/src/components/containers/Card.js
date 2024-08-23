@@ -16,7 +16,7 @@ function Card({src,text, imageSize, bgColor, rounded}){
             <ImageBackground className={`${rounded} flex items-center justify-center my-4`}>
                 {src}
             </ImageBackground>
-            <h3>{text}</h3>
+            <h3 className="text-md bold my-4 text-white tracking-wider text-wrap drop-shadow-md">{text}</h3>
         </CardIten>
     )
 
