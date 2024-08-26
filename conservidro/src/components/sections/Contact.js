@@ -13,7 +13,7 @@ function Contact(){
     const phone = <FcPhone className="size-24" />;
     const wpp = <FaWhatsapp className="size-24"/>;
     const mail = <ImMail className="size-24"/>
-    const instagram = <FaSquareInstagram className="size-24"/>
+    const instagram = <a href="https://www.instagram.com/conservidro/"><FaSquareInstagram className="size-24"/></a>
 
 
     return(
