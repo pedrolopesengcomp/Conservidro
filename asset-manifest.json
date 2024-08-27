@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/conservidro.com.br/static/css/main.a4e85fa6.css",
-    "main.js": "/conservidro.com.br/static/js/main.6e85e93e.js",
-    "static/js/453.17cd031b.chunk.js": "/conservidro.com.br/static/js/453.17cd031b.chunk.js",
-    "static/media/esquadriaDeAluminio.png": "/conservidro.com.br/static/media/esquadriaDeAluminio.258126359a7c9816aaac.png",
-    "static/media/windowcourtain.png": "/conservidro.com.br/static/media/windowcourtain.9eb4f096dafcca66c6f3.png",
-    "static/media/backgroundHome.png": "/conservidro.com.br/static/media/backgroundHome.bb9afe7e5916fe36dfab.png",
-    "static/media/aboutUsAuxImage.png": "/conservidro.com.br/static/media/aboutUsAuxImage.3c4632b21be5f80af035.png",
-    "static/media/backgroundAbout.png": "/conservidro.com.br/static/media/backgroundAbout.1a3154054dd16fd5c362.png",
-    "static/media/Logo.png": "/conservidro.com.br/static/media/Logo.3d437c521615b3e6d2a7.png",
-    "static/media/window.png": "/conservidro.com.br/static/media/window.74f39325d15f8acdb20d.png",
-    "static/media/windowBackground.png": "/conservidro.com.br/static/media/windowBackground.b2bace6018e9927a65b4.png",
-    "static/media/bathroom.png": "/conservidro.com.br/static/media/bathroom.128a64034f3d0d655db7.png",
-    "static/media/whatsapp.png": "/conservidro.com.br/static/media/whatsapp.ac93e6adff7392cab368.png",
-    "index.html": "/conservidro.com.br/index.html",
-    "main.a4e85fa6.css.map": "/conservidro.com.br/static/css/main.a4e85fa6.css.map",
-    "main.6e85e93e.js.map": "/conservidro.com.br/static/js/main.6e85e93e.js.map",
-    "453.17cd031b.chunk.js.map": "/conservidro.com.br/static/js/453.17cd031b.chunk.js.map"
+    "main.css": "/Conservidro/static/css/main.a4e85fa6.css",
+    "main.js": "/Conservidro/static/js/main.8df44255.js",
+    "static/js/453.17cd031b.chunk.js": "/Conservidro/static/js/453.17cd031b.chunk.js",
+    "static/media/esquadriaDeAluminio.png": "/Conservidro/static/media/esquadriaDeAluminio.258126359a7c9816aaac.png",
+    "static/media/windowcourtain.png": "/Conservidro/static/media/windowcourtain.9eb4f096dafcca66c6f3.png",
+    "static/media/backgroundHome.png": "/Conservidro/static/media/backgroundHome.bb9afe7e5916fe36dfab.png",
+    "static/media/aboutUsAuxImage.png": "/Conservidro/static/media/aboutUsAuxImage.3c4632b21be5f80af035.png",
+    "static/media/backgroundAbout.png": "/Conservidro/static/media/backgroundAbout.1a3154054dd16fd5c362.png",
+    "static/media/Logo.png": "/Conservidro/static/media/Logo.3d437c521615b3e6d2a7.png",
+    "static/media/window.png": "/Conservidro/static/media/window.74f39325d15f8acdb20d.png",
+    "static/media/windowBackground.png": "/Conservidro/static/media/windowBackground.b2bace6018e9927a65b4.png",
+    "static/media/bathroom.png": "/Conservidro/static/media/bathroom.128a64034f3d0d655db7.png",
+    "static/media/whatsapp.png": "/Conservidro/static/media/whatsapp.ac93e6adff7392cab368.png",
+    "index.html": "/Conservidro/index.html",
+    "main.a4e85fa6.css.map": "/Conservidro/static/css/main.a4e85fa6.css.map",
+    "main.8df44255.js.map": "/Conservidro/static/js/main.8df44255.js.map",
+    "453.17cd031b.chunk.js.map": "/Conservidro/static/js/453.17cd031b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a4e85fa6.css",
-    "static/js/main.6e85e93e.js"
+    "static/js/main.8df44255.js"
   ]
 }
